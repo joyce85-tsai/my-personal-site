@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專業履歷 | 程式工程師</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- 導覽列 (Navigation) -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold text-blue-600">Resume.</div>
+            <div class="space-x-6 hidden md:flex text-sm font-medium">
+                <a href="#home" class="hover:text-blue-500 transition">首頁</a>
+                <a href="#skills" class="hover:text-blue-500 transition">技能</a>
+                <a href="#projects" class="hover:text-blue-500 transition">專案</a>
+                <a href="#bio" class="hover:text-blue-500 transition">自傳</a>
+                <a href="#contact" class="hover:text-blue-500 transition">聯絡我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 個人名片區 (Hero Section) -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-500 text-6xl shadow-inner border-2 border-white">
+                <!-- 預設頭像圖示 -->
+                <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
+                    你好，我是 <span class="text-blue-600">[你的姓名]</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-6">
+                    熱衷於後端開發與自動化流程的程式工程師小白。
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm shadow-sm">Java</span>
+                    <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm shadow-sm">Python</span>
+                    <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm shadow-sm">VBA 自動化</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心技能 (Skills) -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-10 text-center flex items-center justify-center gap-2">
+                <span class="w-10 h-1 bg-blue-600 rounded"></span>
+                核心技術能力
+                <span class="w-10 h-1 bg-blue-600 rounded"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Java 開發</h3>
+                    <p class="text-gray-600 text-sm">熟悉物件導向邏輯，能夠撰寫基礎演算法與資料處理邏輯。</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-yellow-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Python 應用</h3>
+                    <p class="text-gray-600 text-sm">擅長撰寫爬蟲腳本、數據整理及自動化小型工具。</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-table"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">VBA 自動化</h3>
+                    <p class="text-gray-600 text-sm">運用於 Excel 辦公室自動化，提升日常報表處理效率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專案展示 (Projects) -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold mb-10 text-center">精選作品專案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+                        [ 專案示意圖 / GitHub 縮圖 ]
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Python 網路爬蟲工具</h3>
+                        <p class="text-gray-600 text-sm mb-4">這是一個練習用的專案，主要功能是抓取特定網站的資訊並存成 CSV 檔。</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">Requests</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+                        [ 專案示意圖 ]
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">自動化報表生成器 (VBA)</h3>
+                        <p class="text-gray-600 text-sm mb-4">整合多個工作表數據，一鍵產出月結報表，節省了 80% 的手動操作時間。</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">VBA</span>
+                            <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 自傳區塊 (Biography) -->
+    <section id="bio" class="py-20 bg-white px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-center">關於我 / 自傳</h2>
+            <div class="prose prose-blue mx-auto text-gray-700">
+                <p class="mb-4">
+                    [這裡填寫你的自傳第一段。可以描述你是如何開始接觸程式開發的，以及你在學習 Java、Python、VBA 過程中的心路歷程。]
+                </p>
+                <p class="mb-4">
+                    [這裡填寫你的自傳第二段。描述你的學習習慣，例如喜歡解決邏輯問題、喜歡將重複的工作自動化等，展現出你作為工程師的潛力。]
+                </p>
+                <p class="font-medium text-gray-900 border-l-4 border-blue-600 pl-4 my-8">
+                    「持續學習是工程師的本能，我致力於透過程式碼解決現實生活中的問題。」
+                </p>
+                <p>
+                    [這裡可以寫你的未來規劃，例如希望進入什麼樣的公司，或者未來想深入研究的技術領域。]
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡資訊 (Contact) -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">與我聯絡</h2>
+            <p class="text-gray-600 mb-10">如果你對我的背景有興趣，歡迎隨時聯繫！</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:your-email@example.com" class="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow-lg">
+                    <i class="fa-solid fa-envelope"></i>
+                    發送郵件
+                </a>
+                <a href="#" class="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-black transition shadow-lg">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-10 text-center text-gray-400 text-sm border-t border-gray-100">
+        © 2024 [你的姓名]. Built with Tailwind CSS & Love.
+    </footer>
+
+</body>
+</html>
